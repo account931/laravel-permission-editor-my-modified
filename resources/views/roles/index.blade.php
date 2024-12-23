@@ -1,5 +1,6 @@
 {{-- @extends('permission-editor::layouts.app') --}}
 @extends('layouts.app')
+@extends('permission-editor::layouts.app')
 
 @section('content')
     <div class="sm:flex sm:items-center">
