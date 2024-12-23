@@ -1,9 +1,25 @@
 {{-- @extends('permission-editor::layouts.app') --}}
 @extends('layouts.app')
-@extends('permission-editor::layouts.app')
 
 @section('content')
     <div class="sm:flex sm:items-center">
+	
+	
+	    <!-- Injected -->
+		<div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="{{ route('permission-editor.roles.index') }}"
+                           class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium
+                           @if (request()->routeIs('permission-editor.roles.*')) border-indigo-500 text-gray-900
+                           @else border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
+                           @endif">Roles</a>
+                        <a href="{{ route('permission-editor.permissions.index') }}"
+                           class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium
+                           @if (request()->routeIs('permission-editor.permissions.*')) border-indigo-500 text-gray-900
+                           @else border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
+                           @endif">Permissions</a>
+        </div>
+		<!-- Injected -->
+		
         <div class="sm:flex-auto">
             <h1 class="text-xl font-semibold text-gray-900">Roles (modified forked package)</h1>
         </div>
