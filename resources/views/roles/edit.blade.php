@@ -40,7 +40,10 @@
                                 </label>
 
                                 @foreach ($permissions as $id => $name)
-                                    <input type="checkbox" name="permissions[]" id="permission-{{ $id }}" value="{{ $id }}" @checked(in_array($id, old('permissions', [])) || $role->permissions->contains($id))>
+                                    <input type="checkbox" name="permissions[]" id="permission-{{ $id }}" value="{{ $id }}" {{ (in_array($id, old('permissions', [])) || $role->permissions->contains($id) ? 'checked' : '')}} >  
+									                                                                                        {{-- was =>  @checked(in_array($id, old('permissions', [])) || $role->permissions->contains($id)) --}};
+									
+									
                                     <label class="text-sm font-medium text-gray-700" for="permission-{{ $id }}">{{ $name }}</label>
                                     <br />
                                 @endforeach

@@ -1,4 +1,10 @@
-# Laravel Permission Editor
+# My modified Laravel Permission Editor
+
+##Changed made:
+<p> Changes in view for 'checked' attribute as Laravel 6 does not support @checked  => roles/edit =>  
+   {{ (in_array($id, old('permissions', [])) || $role->permissions->contains($id) ? 'checked' : '')}}
+      was => @checked(in_array($id, old('permissions', [])) || $role->permissions->contains($id))
+ </p>
 
 This is a package that gives a very simple visual UI for managing roles/permissions for [Spatie Laravel Permission]() package.
 
