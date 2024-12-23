@@ -3,7 +3,7 @@
 @section('content')
     <div class="sm:flex sm:items-center">
         <div class="sm:flex-auto">
-            <h1 class="text-xl font-semibold text-gray-900">Edit Role (modified)</h1>
+            <h1 class="text-xl font-semibold text-gray-900">Edit Role (modified forked package)</h1>
         </div>
     </div>
     <div class="mt-8 flex flex-col">

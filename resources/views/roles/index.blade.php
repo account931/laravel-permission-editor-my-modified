@@ -3,7 +3,7 @@
 @section('content')
     <div class="sm:flex sm:items-center">
         <div class="sm:flex-auto">
-            <h1 class="text-xl font-semibold text-gray-900">Roles</h1>
+            <h1 class="text-xl font-semibold text-gray-900">Roles (modified forked package)</h1>
         </div>
         <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
             <a href="{{ route('permission-editor.roles.create') }}"
